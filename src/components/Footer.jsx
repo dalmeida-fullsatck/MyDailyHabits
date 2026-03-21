@@ -1,6 +1,6 @@
 function Footer() {
     return(
-        <footer>
+        <footer className="rodape">
             <small>Desenvolvimento Front-End com react</small>
         </footer>
     )
