@@ -10,7 +10,7 @@ import { HabitsProvider } from './contexts/HabitsProvider'
   return (
     <HabitsProvider>
       <div>
-        {/* <Header titulo = 'My Daily Habits' descricao="Construindo uma rotina melhor."/>    */}
+        {/* <Header titulo = 'My Daily Habits' descricao="Construindo uma rotina melhor."/>    tive que tirar pra funionar  */}
         <BemVindo nomeUsuario="USER" totalHabitos={0}/>
         <SecaoHabitos titulo= 'Meus Hábitos'>
         <HabitList/>
