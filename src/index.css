@@ -18,16 +18,7 @@
   border: 1px solid #d4d4d8;
   font-size: 0.9rem;
 }
-.habit-form button {
-  margin-top: 8px;
-  padding: 8px 16px;
-  border-radius: 4px;
-  border: none;
-  background-color: #111827;
-  color: #f9fafb;
-  cursor: pointer;
-}
-section ul p   {
+section ul   {
   background-color: #111827;
   color:#f9fafb;
   padding:15px;
@@ -35,6 +26,7 @@ section ul p   {
   margin-right:2rem;
   border-radius:6px;
   margin-block: 20px;
-
-
+}
+section ul p {
+  background-color: #444;
 }

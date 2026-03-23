@@ -1,6 +1,7 @@
 import HabitCard from './HabitCard'
-import { useRef, useState } from 'react'
-import  {useHabits} from '../contexts/HabitsContext'
+import {useRef, useState } from 'react'
+import  {useHabits} from '../contexts/UseHabits'
+
 
 
 function HabitList() {
@@ -21,7 +22,7 @@ function HabitList() {
           const {name, value } = e.target 
           setForm(prev =>  ({...prev , [name]: value}))
           if(name === 'novoNome'){
-                if (value.lenght  > 0 && value.lenght < 3){
+                if (value.lenght  > 0 && value.length < 3){
                 setErroNome('O nome deve ter pelo menos 3 caracteres.')
                 }else{
                 setErroNome('')
@@ -77,7 +78,9 @@ function HabitList() {
                                 value={form.novaMeta} onChange={handleChange} />
                             </label>
                          </div>
+                         <button type='submit'> Adicionar Hábito </button>
                     </form>
+                    
                     {habits.length === 0 &&(
                          <p>Nenhum hábito cadastrado ainda, vamos cadastrar?</p>
                     )}
